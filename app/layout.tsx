@@ -3,6 +3,9 @@ import "./css/style.css";
 
 import { Kode_Mono } from "next/font/google";
 
+// 添加 Script 组件的导入
+import Script from "next/script";
+
 const inter = Kode_Mono({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -58,6 +61,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* 添加 Google Analytics 跟踪代码 */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-NREP572H9F`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NREP572H9F');
+          `}
+        </Script>
+      </head>
       <body
         className={`${inter.variable} font-inter antialiased bg-black text-white tracking-tight`}
       >
