@@ -65,6 +65,7 @@ export default function GameplayResults() {
                   className="mb-3 w-full h-full object-cover"
                   src={GameResult1}
                   alt="Gameplay Result 01"
+                  loading="lazy"
                 />
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
@@ -72,6 +73,7 @@ export default function GameplayResults() {
                   className="mb-3 w-full h-full object-cover"
                   src={GameResult2}
                   alt="Gameplay Result 02"
+                  loading="lazy"
                 />
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
@@ -79,6 +81,7 @@ export default function GameplayResults() {
                   className="mb-3 w-full h-full object-cover"
                   src={GameResult3}
                   alt="Gameplay Result 03"
+                  loading="lazy"
                 />
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
@@ -86,6 +89,7 @@ export default function GameplayResults() {
                   className="mb-3 w-full h-full object-cover"
                   src={GameResult4}
                   alt="Gameplay Result 04"
+                  loading="lazy"
                 />
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
@@ -93,6 +97,7 @@ export default function GameplayResults() {
                   className="mb-3 w-full h-full object-cover"
                   src={GameResult5}
                   alt="Gameplay Result 05"
+                  loading="lazy"
                 />
               </div>
             </div>

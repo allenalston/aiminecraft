@@ -77,6 +77,7 @@ const Technology = () => {
               src={Illustration}
               alt="Oasis AI Technology"
               className="object-cover rounded-xl max-w-full h-auto mx-auto"
+              loading="lazy"
             />
           </div>
         </div>

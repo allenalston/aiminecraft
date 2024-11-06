@@ -38,6 +38,7 @@ export default function DefaultLayout({
             className="max-w-[200px] filter blur-[5px]"
             priority
             alt="Hero Illustration"
+            loading="lazy"
           />
         </div>
 

@@ -61,11 +61,22 @@ export default function Hero() {
               </svg>
             </button>
 
+            {/* Added loading placeholder */}
+            <div className="absolute inset-0 flex items-center justify-center ">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-500"></div>
+            </div>
+
             <iframe
               id="minecraft-iframe"
               src="https://oasis.decart.ai/welcome"
               className="w-full md:aspect-video h-[800px] md:h-auto"
               title="AI Minecraft"
+              loading="lazy"
+              onLoad={(e) => {
+                // Hide loading placeholder when iframe is loaded
+                const target = e.target as HTMLIFrameElement;
+                target.previousElementSibling?.classList.add('hidden');
+              }}
             ></iframe>
           </div>
         </div>

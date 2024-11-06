@@ -77,6 +77,7 @@ export default function Features() {
           width="1440"
           height="440"
           alt="AI Minecraft Illustration"
+          loading="lazy"
         />
       </div>
       <div className="container mx-auto px-6">

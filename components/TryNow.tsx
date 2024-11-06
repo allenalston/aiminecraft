@@ -16,6 +16,7 @@ const TryNow = () => {
           src={Illustration}
           className="max-w-none"
           alt="Try Now Illustration"
+          loading="lazy"
         />
       </div>
       <div className="container mx-auto px-6 relative">
