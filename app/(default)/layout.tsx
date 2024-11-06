@@ -36,7 +36,6 @@ export default function DefaultLayout({
           <Image
             src={Illustration}
             className="max-w-[200px] filter blur-[5px]"
-            priority
             alt="Hero Illustration"
             loading="lazy"
           />
